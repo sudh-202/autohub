@@ -61,13 +61,13 @@ const SearchBar = () => {
       <h2 className="text-4xl font-bold mb-8">Find your dream car</h2>
       <div className="flex mb-8 gap-4 ">
         <button
-          className={`flex-1 py-3 rounded-md ${isNewCar ? "bg-black text-white" : "bg-gray-200 text-black"}`}
+          className={`flex-1 py-3 rounded-md ${isNewCar ? "bg-primary-blue text-white" : "bg-gray-200 text-black"}`}
           onClick={() => { setIsNewCar(true); setVehicleType(""); setCity(""); }}
         >
           New Car
         </button>
         <button
-          className={`flex-1 py-3 rounded-md ${!isNewCar ? "bg-black text-white" : "bg-gray-200 text-black"}`}
+          className={`flex-1 py-3 rounded-md ${!isNewCar ? "bg-primary-blue text-white" : "bg-gray-200 text-black"}`}
           onClick={() => { setIsNewCar(false); setVehicleType(""); setCity(""); }}
         >
           Used Car
